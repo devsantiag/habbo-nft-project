@@ -1,0 +1,110 @@
+/* main css for positioning elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Ubuntu, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans";
+    background-position: center;
+}
+
+body {
+    background-image: url(images/background/km9di8A\ -\ Copia.png);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.h_logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    left: 25px;
+    top: 7px;
+}
+
+button {
+    cursor: pointer;
+    background-image: none
+}
+
+.principal_header_css_position {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.container_position {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.button_navbar {
+    box-shadow: 0 3px 0 1px rgba(0, 0, 0, .3);
+    background-color: #018cdd;
+    border-color: #2a9cde;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+    margin: 2px;
+}
+
+.container_section_interactive {
+    display: flex;
+    justify-content: center;
+}
+
+.container_src_script_image {
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 23%;
+}
+
+.container_button_change_image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top: 450px;
+    transform: translate(5px, 0px);
+}
+
+#button_preview_content_element,
+#button_spin_roulette {
+    box-shadow: 0 3px 0 1px rgba(0, 0, 0, .3);
+    background-color: #0f7dbc;
+    border-color: #2a9cde;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 2px;
+    position: relative;
+}
+
+.button_navbar:hover,
+#button_preview_content_element:hover,
+#button_spin_roulette:hover{
+    background-color: #0069a7;
+    border-color: #2a9cdeef;
+}
