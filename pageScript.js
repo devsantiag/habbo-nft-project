@@ -1,53 +1,47 @@
 
-const button_show_preview_content = document.getElementById('button_preview_content_element')
-const button_galeria_next = document.getElementById('button_spin_roulette')
+const button_galeria_spin = document.getElementById('button_spin_roulette')
 let imageElement = document.getElementById('src_script_image');
+const button_show_preview_content = document.getElementById('button_preview_content_element')
 
-const openSea_storage_nft_habbo = [
-    'https://i.seadn.io/gcs/files/0736f3b9a043065bbf8461c8da40bed8.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/b4299848ea73ff546f67ef7de6e0e46c.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/5351d4b0e26a5aa057b5737e435d4a2b.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/6d6ee511cfaf4f3be3730a7eddc65a81.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/d6fcc0bb103d1ec1e92405974aba7dab.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/982948a4f02e1a3aa0d97100223f3532.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/9c5fbb8c73853da0a75fbc9b465e87a3.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/e6c2e4d83fd7469f12836f437a6e2d4d.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/9d18a059e244757bb6ebc1bf568d35d8.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/7a52974a69f7d9b4545604a6f30f4239.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/973616b19bc63f8eabb9fcd1a62f1785.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/9cd387cc25d0ac94d330c0798f9500ff.png?auto=format&dpr=1&w=384',
-    'https://i.seadn.io/gcs/files/fd0e36474cfb57a53aeab4acf1785d82.png?auto=format&dpr=1&w=384',
+const openSeaStorageImageHabboNft = [
+    'https://i.seadn.io/gcs/files/fd0e36474cfb57a53aeab4acf1785d82.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/83c39ec8b6d7eeb0359a4a770b8d6c8e.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/4e081187998e8c1f60d1926c72f4ffee.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/390b3589c9bca32dfef09ffe5b23d429.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/3f35bc4e5171750c4a8764abeaa99b39.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/7dfffda22fbe2c3791c2f83d122c4e98.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8ac2b20176465df7d3d19c755d6e957e.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/a5f1daafe3f44556914dd6d332c18ca4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/88ff6e907caa8352b46eb8808d1f5f7f.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384','https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384','https://i.seadn.io/gcs/files/58fbbf4a5eb842b4f6ac1a545b87d738.png?auto=format&dpr=1&w=1000'
 ];
 
-imageElement.src = openSea_storage_nft_habbo[0]
+imageElement.src = openSeaStorageImageHabboNft[0]
 
 let currentImageIndexRoulete = 0
 
-button_galeria_next.addEventListener('click', () => {
+button_galeria_spin.addEventListener('click', () => {
 
+    button_galeria_spin.style.cursor = 'not-allowed'
+    button_galeria_spin.disabled = true
     let intervalValue = 0
 
     let rotationInitial = setInterval(() => {
-        const randomStorageOpenSeaArray = Math.floor(Math.random() * openSea_storage_nft_habbo.length)
-        imageElement.src = openSea_storage_nft_habbo[randomStorageOpenSeaArray]
+        const randomStorageOpenSeaArray = Math.floor(Math.random() * openSeaStorageImageHabboNft.length)
+        imageElement.src = openSeaStorageImageHabboNft[randomStorageOpenSeaArray]
 
         intervalValue++
 
-        if(intervalValue === 150) {
-            clearInterval(rotationInitial)     
-            rotationInitial = Math.random(Math.max(), 0)
+        if (intervalValue === 300) {
+            setTimeout(() => {
+                button_galeria_spin.style.cursor = 'pointer'
+                button_galeria_spin.disabled = false
+            }, 1000);
+            clearInterval(rotationInitial)
         }
-    }, 60)
+    }, 20)
 })
 
-let currentImageIndex = 0
+let containerScriptGaleria = document.getElementById('countainer_images_nft')
 
 button_show_preview_content.addEventListener('click', () => {
-    currentImageIndex++
-    setInterval(() => {
-        if (currentImageIndex >= openSea_storage_nft_habbo.length) {
-            currentImageIndex = 0
-        }
-        imageElement.src = openSea_storage_nft_habbo[currentImageIndex]
-    }, 20);
-})
+    button_show_preview_content.disabled = true
+    for (let i = 0; i < openSeaStorageImageHabboNft.length; i++) {
+        setTimeout(() => {
+            const imgElement = document.createElement('img')
+            imgElement.src = openSeaStorageImageHabboNft[i]
+            containerScriptGaleria.appendChild(imgElement)
+        }, 30);
+    }
+});
