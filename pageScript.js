@@ -1,7 +1,7 @@
 
-const button_galeria_spin = document.getElementById('button_spin_roulette')
+const buttonSpinGaleriaPhotos = document.getElementById('button_spin_roulette')
 let imageElement = document.getElementById('src_script_image');
-const button_show_preview_content = document.getElementById('button_preview_content_element')
+const buttonShowPreviewGaleria = document.getElementById('button_preview_content_element')
 let containerScriptGaleria = document.getElementById('countainer_images_nft')
 
 const openSeaStorageImageHabboNft = [
@@ -12,10 +12,10 @@ imageElement.src = openSeaStorageImageHabboNft[0]
 
 let currentImageIndexRoulete = 0
 
-button_galeria_spin.addEventListener('click', () => {
+buttonSpinGaleriaPhotos.addEventListener('click', () => {
 
-    button_galeria_spin.style.cursor = 'not-allowed'
-    button_galeria_spin.disabled = true
+    buttonSpinGaleriaPhotos.style.cursor = 'not-allowed'
+    buttonSpinGaleriaPhotos.disabled = true
 
     let intervalValue = 0
 
@@ -27,8 +27,8 @@ button_galeria_spin.addEventListener('click', () => {
 
         if (intervalValue === 300) {
             setTimeout(() => {
-                button_galeria_spin.style.cursor = 'pointer'
-                button_galeria_spin.disabled = false
+                buttonSpinGaleriaPhotos.style.cursor = 'pointer'
+                buttonSpinGaleriaPhotos.disabled = false
             }, 1000);
             clearInterval(rotationInitial)
         }
@@ -37,13 +37,13 @@ button_galeria_spin.addEventListener('click', () => {
 
 let isPreviewContentOpen = false
 
-button_show_preview_content.addEventListener('click', () => {
+buttonShowPreviewGaleria.addEventListener('click', () => {
 
-    button_show_preview_content.disabled = true
+    buttonShowPreviewGaleria.disabled = true
     isPreviewContentOpen = !isPreviewContentOpen
     
     if(isPreviewContentOpen) {
-        button_show_preview_content.textContent =   'Return'
+        buttonShowPreviewGaleria.textContent =   'Return'
         for (let i = 0; i < openSeaStorageImageHabboNft.length; i++) {
             setTimeout(() => {
                 let imgElement = document.createElement('img')
@@ -52,8 +52,8 @@ button_show_preview_content.addEventListener('click', () => {
             }, 30 * i);
         }
     } else {
-        button_show_preview_content.textContent =   'Preview'
+        buttonShowPreviewGaleria.textContent =   'Preview'
         containerScriptGaleria.innerHTML = ''
     }
-    button_show_preview_content.disabled = false;
+    buttonShowPreviewGaleria.disabled = false;
 });
