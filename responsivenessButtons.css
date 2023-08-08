@@ -1,5 +1,10 @@
 @media (min-width: 380px) and (max-width: 1100px){
     
+    .principal_header_css_position {
+        position: relative;
+        left: -5%;
+    }
+
     .button_navbar {
         padding: 19px 40px;
         position: relative;
@@ -8,7 +13,6 @@
     #button_preview_content_element,
     #button_spin_roulette {
         top: 35%;
-        
     }
     
 }
