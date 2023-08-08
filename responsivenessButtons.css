@@ -1,35 +1,15 @@
-@media (width: 375px) {
-
-    .h_logo {
-        position: absolute;
-        top: 1.5%;
-        left: 5%;
-    }
-
+@media (min-width: 380px) and (max-width: 1100px){
+    
     .button_navbar {
         padding: 19px 40px;
+        position: relative;
     }
-
+    
     #button_preview_content_element,
     #button_spin_roulette {
-        top: 50%;
+        top: 35%;
+        
     }
-
+    
 }
 
-@media (width: 414px) {
-    .h_logo {
-        position: absolute;
-        top: 1.5%;
-        left: 5%;
-    }
-
-    .button_navbar {
-        padding: 23px 40px;
-    }
-
-    #button_preview_content_element,
-    #button_spin_roulette {
-        top: 70%;
-    }
-}
