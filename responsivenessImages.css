@@ -1,0 +1,36 @@
+@media (width: 375px) {
+
+    #countainer_images_nft {
+        top: 85.9%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        grid-gap: 10px 8px;
+        padding: 0px 80px;
+    }
+
+}
+
+@media (width: 414px) {
+
+    .container_src_script_image {
+        top: 17.5%;
+    }
+
+    #countainer_images_nft {
+        top: 66.2%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        grid-gap: 10px 8px;
+        padding: 0px 80px;
+    }
+
+}
+
