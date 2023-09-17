@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(images/background/km9di8A\ -\ Copia.png);
+    background-image: url(/habbo-nft-project/images/background/km9di8A\ -\ Copia.png);
     background-position: center;
     background-repeat: repeat;
 }
@@ -103,7 +103,7 @@ button {
 
 .button_navbar:hover,
 #button_preview_content_element:hover,
-#button_spin_roulette:hover{
+#button_spin_roulette:hover {
     background-color: #00a6ff;
     border-color: #35b5ffef;
 }

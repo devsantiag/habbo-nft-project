@@ -6,7 +6,7 @@ let containerScriptGaleria = document.getElementById('countainer_images_nft')
 
 // armazem das imagens habbo nft
 const openSeaStorageImageHabboNft = [
-    'https://i.seadn.io/gcs/files/fd0e36474cfb57a53aeab4acf1785d82.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/83c39ec8b6d7eeb0359a4a770b8d6c8e.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/4e081187998e8c1f60d1926c72f4ffee.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/390b3589c9bca32dfef09ffe5b23d429.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/3f35bc4e5171750c4a8764abeaa99b39.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/7dfffda22fbe2c3791c2f83d122c4e98.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8ac2b20176465df7d3d19c755d6e957e.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/a5f1daafe3f44556914dd6d332c18ca4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/88ff6e907caa8352b46eb8808d1f5f7f.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384','https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384','https://i.seadn.io/gcs/files/58fbbf4a5eb842b4f6ac1a545b87d738.png?auto=format&dpr=1&w=1000'
+    'https://i.seadn.io/gcs/files/fd0e36474cfb57a53aeab4acf1785d82.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/83c39ec8b6d7eeb0359a4a770b8d6c8e.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/4e081187998e8c1f60d1926c72f4ffee.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/390b3589c9bca32dfef09ffe5b23d429.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/3f35bc4e5171750c4a8764abeaa99b39.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/7dfffda22fbe2c3791c2f83d122c4e98.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8ac2b20176465df7d3d19c755d6e957e.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/a5f1daafe3f44556914dd6d332c18ca4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/88ff6e907caa8352b46eb8808d1f5f7f.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/1545bc646f802058737bb6443d2a7622.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/8598f852eee4e743634cea3add9f46a4.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 'https://i.seadn.io/gcs/files/58fbbf4a5eb842b4f6ac1a545b87d738.png?auto=format&dpr=1&w=1000'
 ];
 
 // posição inicial da imagem que mostra para o usuário
@@ -44,9 +44,9 @@ buttonShowPreviewGaleria.addEventListener('click', () => {
 
     buttonShowPreviewGaleria.disabled = true
     isPreviewContentOpen = !isPreviewContentOpen
-    
-    if(isPreviewContentOpen) {
-        buttonShowPreviewGaleria.textContent =   'Return'
+
+    if (isPreviewContentOpen) {
+        buttonShowPreviewGaleria.textContent = 'Return'
         for (let i = 0; i < openSeaStorageImageHabboNft.length; i++) {
             setTimeout(() => {
                 let imgElement = document.createElement('img')
@@ -55,7 +55,7 @@ buttonShowPreviewGaleria.addEventListener('click', () => {
             }, 30 * i);
         }
     } else {
-        buttonShowPreviewGaleria.textContent =   'Preview'
+        buttonShowPreviewGaleria.textContent = 'Preview'
         containerScriptGaleria.innerHTML = ''
     }
     buttonShowPreviewGaleria.disabled = false;
