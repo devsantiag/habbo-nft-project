@@ -31,7 +31,7 @@ const openSeaStorageImageHabboNft = [
     'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 
     'https://i.seadn.io/gcs/files/14b119d17a5182964ea8b97155763ce7.png?auto=format&dpr=1&w=384', 
     'https://i.seadn.io/gcs/files/58fbbf4a5eb842b4f6ac1a545b87d738.png?auto=format&dpr=1&w=1000',
-];
+] ;
 
 // initial position of the image that shows to the customer
 
@@ -78,7 +78,7 @@ buttonShowPreviewGaleria.addEventListener('click', () => {
                 let imgElement = document.createElement('img')
                 imgElement.src = openSeaStorageImageHabboNft[i]
                 containerScriptGaleria.appendChild(imgElement)
-            }, 30 * i);
+            }, 15 * i);
         }
     } else {
         buttonShowPreviewGaleria.textContent = 'Preview'
