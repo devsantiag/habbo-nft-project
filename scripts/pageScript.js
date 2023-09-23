@@ -4,7 +4,7 @@ let imageElement = document.getElementById('src_script_image');
 const buttonShowPreviewGaleria = document.getElementById('button_preview_content_element')
 let containerScriptGaleria = document.getElementById('countainer_images_nft')
 
-// armazem das imagens habbo nft
+// warehouse of habbo nft images
 const openSeaStorageImageHabboNft = [
     'https://i.seadn.io/gcs/files/fd0e36474cfb57a53aeab4acf1785d82.png?auto=format&dpr=1&w=384',
     'https://i.seadn.io/gcs/files/83c39ec8b6d7eeb0359a4a770b8d6c8e.png?auto=format&dpr=1&w=384', 
@@ -27,7 +27,7 @@ const openSeaStorageImageHabboNft = [
     'https://i.seadn.io/gcs/files/58fbbf4a5eb842b4f6ac1a545b87d738.png?auto=format&dpr=1&w=1000'
 ];
 
-// posição inicial da imagem que mostra para o cliente
+// initial position of the image that shows to the customer
 
 const randomImage = Math.floor(Math.random() * 10)
 imageElement.src = openSeaStorageImageHabboNft[randomImage]
@@ -58,7 +58,7 @@ buttonSpinGaleriaPhotos.addEventListener('click', () => {
     }, 20)
 })
 
-// abre a galeria de imagens nft
+// open the nft image gallery
 let isPreviewContentOpen = false
 buttonShowPreviewGaleria.addEventListener('click', () => {
 
