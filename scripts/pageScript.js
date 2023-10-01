@@ -1,4 +1,4 @@
-const buttonSpinGaleriaPhotos = document.getElementById('button_spin_roulette')
+const spinGaleriaPhotos = document.getElementById('button_spin_roulette')
 let imageElement = document.getElementById('src_script_image');
 const buttonShowPreviewGaleria = document.getElementById('button_preview_content_element')
 let containerScriptGaleria = document.getElementById('countainer_images_nft')
@@ -40,11 +40,11 @@ imageElement.src = openSeaStorageImageHabboNft[randomImage]
 
 let currentImageIndexRoulete = 0
 
-// roleta de imagens nft
-buttonSpinGaleriaPhotos.addEventListener('click', () => {
+// nft image roulette
+spinGaleriaPhotos.addEventListener('click', () => {
 
-    buttonSpinGaleriaPhotos.style.cursor = 'not-allowed'
-    buttonSpinGaleriaPhotos.disabled = true
+    spinGaleriaPhotos.style.cursor = 'not-allowed'
+    spinGaleriaPhotos.disabled = true
 
     let intervalValue = 0
 
@@ -56,8 +56,8 @@ buttonSpinGaleriaPhotos.addEventListener('click', () => {
 
         if (intervalValue === 300) {
             setTimeout(() => {
-                buttonSpinGaleriaPhotos.style.cursor = 'pointer'
-                buttonSpinGaleriaPhotos.disabled = false
+                spinGaleriaPhotos.style.cursor = 'pointer'
+                spinGaleriaPhotos.disabled = false
             }, 1000);
             clearInterval(rotationInitial)
         }
