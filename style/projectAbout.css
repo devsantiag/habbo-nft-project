@@ -1,0 +1,11 @@
+/* css project about */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('/habbo-nft-project/images/background/km9di8A\ -\ Copia.png');
+    background-position: center;
+    background-repeat: repeat;
+    position: absolute;
+}
