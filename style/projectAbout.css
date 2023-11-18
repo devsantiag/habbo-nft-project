@@ -7,5 +7,22 @@
     background-image: url('/habbo-nft-project/images/background/km9di8A\ -\ Copia.png');
     background-position: center;
     background-repeat: repeat;
-    position: absolute;
+    color: white;
+    position: relative;
+}
+
+.container {
+    top: 50px;
+}
+
+.h1_title {
+    text-align: center
+}
+
+.text {
+    display: flex;
+    width: 50%;
+    font-size: 17pt;
+    top: 25px;
+    text-align: justify;
 }
