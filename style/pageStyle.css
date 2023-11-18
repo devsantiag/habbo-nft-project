@@ -16,12 +16,10 @@ body {
 
 .h_logo {
     position: absolute;
-    display: flex;
     align-items: center;
     flex-direction: row;
     cursor: pointer;
-    left: 25px;
-    top: 7px;
+    margin: 10px;
 }
 
 button {
@@ -57,7 +55,7 @@ button {
     border-style: solid;
     text-transform: uppercase;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
     margin: 2px;
 }

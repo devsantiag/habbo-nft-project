@@ -1,28 +1,37 @@
 /* css project about */
 
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+body {
     background-image: url('/habbo-nft-project/images/background/km9di8A\ -\ Copia.png');
     background-position: center;
     background-repeat: repeat;
-    color: white;
-    position: relative;
+    font-family: Ubuntu, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+.h_logo {
+    margin: 10px;
 }
 
 .container {
     top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .h1_title {
-    text-align: center
+    text-align: center;
+    margin-bottom: -30px;
 }
 
 .text {
-    display: flex;
-    width: 50%;
-    font-size: 17pt;
-    top: 25px;
+    text-align: center;
     text-align: justify;
+    font-size: 16pt;
+    width: 50%;
+}
+h1 {
+    color: white;
+}
+p {
+    color: rgba(255, 255, 255, 0.623);
 }
